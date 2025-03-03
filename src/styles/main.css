@@ -1,0 +1,322 @@
+:root {
+  --color-dark: #071529;
+  --color-light: #ffffff;
+  --color-highlight: #e3ff6a;
+  --color-neon-green: #a4ff7a;
+  --color-deep-blue: #1e293b;
+  --color-soft-gray: #8892b0;
+
+  --gradient-main: linear-gradient(135deg, #1e293b 0%, #0d1117 100%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+/* .button {
+  background: var(--color-highlight);
+  color: var(--color-dark);
+} */
+
+/* micodig AQUI*/
+header {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+.logoflorverde {
+  width: 5%;
+}
+
+nav ul {
+  display: flex;
+  font-size: 90%;
+}
+nav ul li {
+  margin: 5px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.button1content {
+  display: flex;
+  background-color: transparent;
+  color: var(--color-light);
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  border: solid 1px white;
+  border-radius: 20px;
+  cursor: grab;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.flecha {
+  width: 15px;
+}
+
+/* main */
+
+.section1 {
+  text-align: center;
+  padding: 20px;
+}
+.section2 {
+  aspect-ratio: 16/10;
+  background-image: linear-gradient(
+    180deg,
+    rgba(13, 28, 43, 0.9) 10%,
+    rgba(51, 83, 149)
+  );
+  display: flex;
+}
+.fotospace {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myproyects {
+  font-size: 15px;
+  position: absolute;
+  bottom: 20px;
+  border: solid 1px white;
+  border-radius: 10px;
+  font-style: none;
+  background-color: var(--color-highlight);
+  text-decoration: none;
+}
+.foto {
+  width: 80%;
+  height: 100%;
+}
+.caja1 {
+  position: relative;
+  padding: 10px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+.caja1content {
+  position: absolute;
+  font-size: 12px;
+  border: outset 3px white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+  transform: rotate(13deg);
+}
+.caja2 {
+  position: relative;
+  padding: 10px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+.caja2content {
+  position: absolute;
+  font-size: 12px;
+  border: outset 3px white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+  transform: rotate(-13deg);
+}
+
+/* art1 */
+.art1 {
+  display: flex;
+}
+.art1cont1 {
+  position: relative;
+  width: 25%;
+}
+.art1img1cont {
+  width: 80px;
+  transform: rotate(20deg);
+  position: absolute;
+  padding: 10px;
+  margin: 10px;
+  /* aspect-ratio: 16/10;
+  background-image: linear-gradient(
+    180deg,
+    rgba(13, 28, 43, 0.9) 10%,
+    rgba(51, 83, 149)
+  );
+  border: transparent;
+  border-radius: 50%; */
+}
+
+.art1cont3 {
+  position: relative;
+  width: 25%;
+}
+.art1img3cont {
+  width: 80px;
+  transform: rotate(20deg);
+  position: absolute;
+
+  /* aspect-ratio: 16/10;
+  background-image: linear-gradient(
+    180deg,
+    rgba(13, 28, 43, 0.9) 10%,
+    rgba(51, 83, 149)
+  );
+  padding: 10px;
+  margin: 10px;
+  border: de;
+  border-radius: 50%; */
+}
+.art1cont2 {
+  width: 50%;
+  text-align: center;color: var(--color-soft-gray);
+  margin-block: 20px;
+}
+.art1img2cont {
+  width: 80px;
+  transform: rotate(-20deg);
+  position: absolute;
+  bottom: 1%;
+  padding: 10px;
+  margin: 10px;
+  
+  /* aspect-ratio: 16/10;
+  background-image: linear-gradient(
+    180deg,
+    rgba(13, 28, 43, 0.9) 10%,
+    rgba(51, 83, 149)
+  );
+  border: transparent;
+  border-radius: 50%; */
+}
+
+.show {
+  border: solid 1px rgb(14, 10, 10);
+  border-radius: 10px;
+  font-style: none;
+  background-color: var(--color-highlight);
+  text-decoration: none;
+  
+  padding: 3px;
+}
+.art2 {
+  margin-block: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.art2 h1 {
+  text-align: center;
+}
+/* art2 */
+.art2 h1 {
+  color: var(--color-highlight);
+}
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logosmall {
+  height: 20vh;
+  width: 20vh;
+  background-color: var(--color-deep-blue);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 30px;
+  box-shadow: 0px 3px var(--color-soft-gray);
+}
+
+.experience {
+  width: 50%;
+  text-align: center;
+  width: 41vh;
+  height: 42vh;
+  background-color: var(--color-deep-blue);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 30px;
+  box-shadow: 0px 3px var(--color-soft-gray);
+}
+.experience h1 {
+  font-size: 100px;
+}
+.experience h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.cv {
+  border: solid 1px white;
+  border-radius: 10px;
+  font-style: none;
+  background-color: var(--color-highlight);
+  text-decoration: none;
+  padding: 3px;
+  margin: 10px;
+}
+.adicionalskills {
+  width: 6vh;
+}
+.adicional {
+  background-color: var(--color-deep-blue);
+  width: 80%;
+  background-color: var(--color-deep-blue);
+  padding: 10px;
+  margin-block: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0px 3px var(--color-soft-gray);
+}
+.adicional1 {
+  display: flex;
+  padding-block: 20px;
+ 
+}
+/* art3 */
+.art3{background-color: var(--color-soft-gray);
+width: 80%;
+height: 200px;
+margin-block: 3%;
+justify-content: center;
+border-radius: 20px;}
+
+/* FORMULARIO */
+#productForm{font-family: sans-serif;
+  border: outset 5px rgb(154, 183, 112);
+  border-radius: 30px;
+  width: 80%;
+  background-color: rgb(221, 234, 223);
+  padding: 30px;
+  margin: auto;
+  margin-block: 50px;
+  text-align: center;
+  ;
+}
+#description{width: 100%;
+margin: 10px; padding: 3px}
+#age{width: 100%;margin: 10px;padding: 3px;}
+#nombre{width: 100%;
+  margin: 10px;padding: 3px;}
+button{background-color: var(--color-highlight);
+width: 100%;padding: 3px; color: var(--color-deep-blue);}
