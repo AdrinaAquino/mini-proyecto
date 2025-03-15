@@ -1,4 +1,5 @@
-const imagenlogos = document.querySelector("#imagenlogo")
+const imagenlogos =document.querySelector('#imagenlogo')
+console.log(imagenlogos)
 const habilidadeslogos = [
     {
         image: "./src/imagen/html.png",
@@ -31,7 +32,7 @@ const habilidadeslogos = [
 
     },
     {
-        image: "./src/imagen/hola.png",
+        image: "./src/imagen/hoja.png",
         description: "logo html",
 
     },
@@ -43,11 +44,11 @@ const habilidadeslogos = [
 ]
 
 function ordenar(datos, indexhtml) {
-
+indexhtml.innerHTML="";
     for (let i = 0; i < datos.length; i++) {
         const item = datos[i];
-        const template = ``
-
+        const template = `<div><img src="${item.image}" alt="" class="logosmall"></div>`
+indexhtml.innerHTML+=template
     }
 }
 ordenar(habilidadeslogos, imagenlogos)

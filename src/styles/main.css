@@ -54,7 +54,7 @@ nav ul li a {
   padding: 3px;
   border: solid 1px white;
   border-radius: 20px;
-  cursor: grab;
+  cursor: pointer;
   text-decoration: none;
   margin-right: 10px;
 }
@@ -101,12 +101,12 @@ nav ul li a {
   align-items: center;
 }
 .foto {
-  height: 200px;
+  height: 340px;
 }
 .myproyects {
   font-size: 15px;
   position: absolute;
-  top: 230px;
+  top: 85%;
   border: solid 1px white;
   border-radius: 10px;
   font-style: none;
@@ -167,7 +167,7 @@ nav ul li a {
   width: 46vw;
   text-align: center;
   color: var(--color-soft-gray);
-  font-size:10px;
+  font-size: 10px;
 }
 .show {
   border: solid 1px rgb(14, 10, 10);
@@ -175,7 +175,7 @@ nav ul li a {
   font-style: none;
   background-color: var(--color-highlight);
   text-decoration: none;
-
+  font-size: 15px;
   padding: 3px;
 }
 /* ART2 */
@@ -190,33 +190,45 @@ nav ul li a {
   text-align: center;
   color: var(--color-highlight);
 }
-.logos {
+.logos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+  
+.cajalogosmall{
+  width: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
+ }
+ .cajaexperience{
+  width:300px ;
+  display: flex;
+  justify-content: center;
+ }
+ .experience {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  background-color: var(--color-deep-blue);
+  border-radius: 30px;
+  box-shadow: 0px 1px var(--color-soft-gray);
+ }
 
 .logosmall {
-  width: 170px;
-  height: 170px;
+  
+  height: 150px;
+  width: 150px;
   background-color: var(--color-deep-blue);
   padding: 10px;
-  margin: 5px;
+  margin: 1vw;
   border-radius: 30px;
   box-shadow: 0px 1px var(--color-soft-gray);
 }
 
-.experience {
-  text-align: center;
-  width: 355px;
-  height: 355px;
-  background-color: var(--color-deep-blue);
-  padding: 10px;
-  margin: 5px;
-  border-radius: 30px;
-  box-shadow: 0px 1px var(--color-soft-gray);
-}
 .experience h1 {
   font-size: 100px;
 }
@@ -355,4 +367,5 @@ button {
   width: 100%;
   padding: 3px;
   color: var(--color-deep-blue);
+  border-radius: 8px;
 }
