@@ -2,6 +2,11 @@
   box-sizing: border-box;
   margin: 0;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(127, 110, 133);
+}
 
 .img {
   width: 100%;
@@ -39,8 +44,16 @@
   background-color: rgba(11, 8, 62, 0.932);
 }
 
-/* DISE;O PARA CELULAR */
-@media(max-width:480px){
-
-  
+body a {
+  font-size: 15px;
+  border: outset 2px rgba(196, 197, 219, 0.488);
+  border-radius: 10px;
+  font-style: none;
+  background-color: rgb(175, 74, 74);
+  text-decoration: none;
+  padding: 3px;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  width: 180px;
+  text-align: center;
 }
