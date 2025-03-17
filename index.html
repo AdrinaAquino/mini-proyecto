@@ -11,20 +11,22 @@
 
 <body>
     <header>
-        <!-- <div class="logoflor"> -->
+
         <img src="./src/imagen/logoflorverde.png" alt="flor logo rojo" class="logoflorverde">
-        <!-- </div> -->
-        <nav>
-            <!-- <div class="lista1"> -->
+
+        <nav class="opciones" id="navBar">
             <ul>
-                <li><a href="#">Acerca de mi</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Proyectos</a></li>
+                <li><a href="#articulo1">Acerca de mi</a></li>
+                <li><a href="#mi_proyecto">Habilidades</a></li>
+                <li><a href="#muestra_mis_proyectos">Proyectos</a></li>
             </ul>
         </nav>
         <!-- <div class="button1"> -->
-        <a href="#" class="button1content">CONTACT<img src="./src/imagen/flecha.png" alt="flecha" class="flecha"></a>
-
+        <!-- <a href="#" class="button1content">CONTACT<img src="./src/imagen/flecha.png" alt="flecha" class="flecha"></a> -->
+        <button class="menu" id="menus"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                viewBox="0 0 48 48">
+                <path fill="#607D8B" d="M6 22H42V26H6zM6 10H42V14H6zM6 34H42V38H6z"></path>
+            </svg></button>
         <!-- </div> -->
     </header>
     <!-- principal -->
@@ -36,7 +38,6 @@
             </section>
             <!-- CAJAS -->
             <section class="section2">
-
                 <div class="caja1content"><strong>
                         Client From Bolivia</strong><br>
                     En Bolivia,<br>
@@ -59,7 +60,7 @@
             </section>
         </article>
         <!-- ARTICULO -->
-        <ARTicle class="art1">
+        <ARTicle class="art1" id="articulo1">
             <div class="art1cont1">
                 <img src="./src/imagen/marco.png" alt="" class="art1img1cont">
                 <img src="./src/imagen/recuerdos.png" alt="" class="art1img2cont">
@@ -92,7 +93,7 @@
 
             <div class="logos">
                 <div class="cajalogosmall" id="imagenlogo">
-                        <!-- <div><img src="./src/imagen/html.png" alt="" class="logosmall"></div>
+                    <!-- <div><img src="./src/imagen/html.png" alt="" class="logosmall"></div>
                         <div><img src="./src/imagen/tailwind.png" alt="" class="logosmall"></div>
                         <div><img src="./src/imagen/css.png" alt="" class="logosmall"></div>
                         <div><img src="./src/imagen/ts.png" alt="" class="logosmall"></div>
@@ -148,7 +149,7 @@
                 <textarea name="descripcion" id="description" placeholder="CHAT HERE"></textarea>
             </label>
 
-            <button>
+            <button class="submit">
                 SUBMIT HERE
             </button>
         </form>

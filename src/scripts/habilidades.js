@@ -1,5 +1,7 @@
-const imagenlogos =document.querySelector('#imagenlogo')
-console.log(imagenlogos)
+const imagenlogos = document.querySelector('#imagenlogo')
+const navBars = document.querySelector('#navBar')
+const menu = document.querySelector('#menus')
+
 const habilidadeslogos = [
     {
         image: "./src/imagen/html.png",
@@ -44,11 +46,17 @@ const habilidadeslogos = [
 ]
 
 function ordenar(datos, indexhtml) {
-indexhtml.innerHTML="";
+    indexhtml.innerHTML = "";
     for (let i = 0; i < datos.length; i++) {
         const item = datos[i];
         const template = `<div><img src="${item.image}" alt="" class="logosmall"></div>`
-indexhtml.innerHTML+=template
+        indexhtml.innerHTML += template
     }
 }
 ordenar(habilidadeslogos, imagenlogos)
+
+
+menu.addEventListener('click', function () {
+    console.log("hola")
+    navBars.classList.toggle('hidden')
+})

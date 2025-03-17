@@ -38,3 +38,9 @@
   padding: 20px;
   background-color: rgba(11, 8, 62, 0.932);
 }
+
+/* DISE;O PARA CELULAR */
+@media(max-width:480px){
+
+  
+}
