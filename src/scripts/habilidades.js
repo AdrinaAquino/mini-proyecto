@@ -1,6 +1,14 @@
-const imagenlogos = document.querySelector('#imagenlogo')
-const navBars = document.querySelector('#navBar')
-const menu = document.querySelector('#menus')
+
+const imagenlogos=document.querySelector("#imagenlogo")
+const menu = document.querySelector('#menu');
+const navBar = document.querySelector('#opciones');
+
+
+menu.addEventListener("click", function() {
+    console.log("hola");
+    navBar.classList.toggle("hidden")
+})
+
 
 const habilidadeslogos = [
     {
@@ -56,7 +64,3 @@ function ordenar(datos, indexhtml) {
 ordenar(habilidadeslogos, imagenlogos)
 
 
-menu.addEventListener('click', function () {
-    console.log("hola")
-    navBars.classList.toggle('hidden')
-})

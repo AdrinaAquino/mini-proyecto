@@ -22,51 +22,59 @@ body {
 }
 
 /* micodig AQUI*/
-@media(min-width:480px){
-header {
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  justify-content: space-between;
-}
+@media (min-width: 481px) {
+  header {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-between;
+  }
 
-.logoflorverde {
-  width: 5%;
-}
+  .logoflorverde {
+    width: 5%;
+  }
 
-.opciones ul {
-  font-size: 90%;
-  gap: 40px;
-  display: flex;
-  list-style: none;
-}
-.opciones ul li a {
-  text-decoration: none;
-  color: white;
-  
-}
-.button1content {
-  display: flex;
-  background-color: transparent;
-  color: var(--color-light);
-  justify-content: center;
-  align-items: center;
-  padding: 3px;
-  border: solid 1px white;
-  border-radius: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  margin-right: 10px;
-}
-.flecha {
-  width: 15px;
-}
-.menu{
-  visibility: hidden;
-}
+  .opciones ul {
+    font-size: 90%;
+    gap: 40px;
+    display: flex;
+    list-style: none;
+  }
+  .opciones ul li a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease;
+  }
+  a:hover {
+    transform: scale(1.2);
+  }
+  .button1content {
+    display: flex;
+    background-color: transparent;
+    color: var(--color-light);
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border: solid 1px white;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .flecha {
+    width: 15px;
+  }
+  .menu {
+    visibility: hidden;
+  }
 
+  .art1cont2 {
+    width: 46vw;
+    text-align: center;
+    color: var(--color-soft-gray);
+    font-size: 13px;
+  }
 }
-
 
 /* main */
 .art0 {
@@ -169,19 +177,14 @@ header {
   position: absolute;
   top: 50px;
 }
-.art1cont2 {
-  width: 46vw;
-  text-align: center;
-  color: var(--color-soft-gray);
-  font-size: 10px;
-}
+
 .show {
   border: solid 1px rgb(14, 10, 10);
   border-radius: 10px;
   font-style: none;
   background-color: var(--color-highlight);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 13px;
   padding: 3px;
 }
 /* ART2 */
@@ -196,36 +199,34 @@ header {
   text-align: center;
   color: var(--color-highlight);
 }
-.logos{
+.logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
-  
-.cajalogosmall{
+
+.cajalogosmall {
   width: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
- }
- .cajaexperience{
-  width:300px ;
+}
+.cajaexperience {
+  width: 300px;
   display: flex;
   justify-content: center;
- }
- .experience {
+}
+.experience {
   text-align: center;
   width: 300px;
   height: 300px;
   background-color: var(--color-deep-blue);
   border-radius: 30px;
   box-shadow: 0px 1px var(--color-soft-gray);
- }
+}
 
 .logosmall {
-  
   height: 150px;
   width: 150px;
   background-color: var(--color-deep-blue);
@@ -233,7 +234,11 @@ header {
   margin: 1vw;
   border-radius: 30px;
   box-shadow: 0px 1px var(--color-soft-gray);
+  animation: 1.5s infinite anim-logosmall;
 }
+@keyframes anim-logosmall{0%{transform: scale(1);}
+100%{transform: scale(0.95);}}
+
 
 .experience h1 {
   font-size: 100px;
@@ -368,54 +373,87 @@ header {
   margin: 10px;
   padding: 3px;
 }
-.submit{
+.submit {
   background-color: var(--color-highlight);
   width: 100%;
   padding: 3px;
   color: var(--color-deep-blue);
   border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgba(127, 51, 163, 0.599);
 }
 
-@media(max-width:479px){
+@media (max-width: 480px) {
   header {
     display: flex;
     align-items: center;
     background-color: transparent;
     justify-content: space-between;
   }
-  
+
   .logoflorverde {
     width: 50px;
   }
-  
+
   .opciones {
-  position:absolute;
-  top:62px ;
-  right: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: initial;
-  background-color: #37b76a;
-  height:500px;
-  width: 80%;
-  padding: 20px;
-   
-   
+    position: absolute;
+    top: 62px;
+    right: 0px;
+    background-color: var(--color-deep-blue);
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    z-index: 1;
   }
-  nav ul li {
+  .hidden {
+    display: none;
+  }
+
+  .opciones ul li {
     font-size: 90%;
-   margin-block: 10px;
+    margin-block: 10px;
     list-style: none;
-    
-    
   }
- .opciones li a {
+  .opciones li a {
     text-decoration: none;
     color: white;
+    transition: transform 0.2s ease;
   }
-  .menu{
+  a:hover {
+    transform: scale(1.2);
+  }
+  .menu {
     background-color: transparent;
-    border:none;
+    border: none;
     cursor: pointer;
-    }
+    width: 50px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .art1cont2 {
+    width: 46vw;
+    text-align: center;
+    color: var(--color-soft-gray);
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .art1cont2 {
+    width: 46vw;
+    text-align: center;
+    color: var(--color-soft-gray);
+    font-size: 20px;
+  }
+}
+@media (min-width: 2200px) {
+  .art1cont2 {
+    width: 46vw;
+    text-align: center;
+    color: var(--color-soft-gray);
+    font-size:28px;
+  }
 }
