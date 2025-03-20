@@ -22,59 +22,6 @@ body {
 }
 
 /* micodig AQUI*/
-@media (min-width: 481px) {
-  header {
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    justify-content: space-between;
-  }
-
-  .logoflorverde {
-    width: 5%;
-  }
-
-  .opciones ul {
-    font-size: 90%;
-    gap: 40px;
-    display: flex;
-    list-style: none;
-  }
-  .opciones ul li a {
-    text-decoration: none;
-    color: white;
-    transition: transform 0.2s ease;
-  }
-  a:hover {
-    transform: scale(1.2);
-  }
-  .button1content {
-    display: flex;
-    background-color: transparent;
-    color: var(--color-light);
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-    border: solid 1px white;
-    border-radius: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-  .flecha {
-    width: 15px;
-  }
-  .menu {
-    visibility: hidden;
-  }
-
-  .art1cont2 {
-    width: 46vw;
-    text-align: center;
-    color: var(--color-soft-gray);
-    font-size: 13px;
-  }
-}
 
 /* main */
 .art0 {
@@ -82,6 +29,7 @@ body {
   flex-direction: column;
 }
 .section1 {
+  font-family: "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   padding: 20px;
 }
@@ -98,10 +46,10 @@ body {
   height: 400px;
 }
 .caja1content {
-  width: 28vw;
+  width: 240px;
   margin-left: 3%;
   font-size: 8px;
-  border: outset 3px white;
+  border: ridge 1px rgba(255, 255, 255, 0.452);
   border-radius: 20px;
   text-align: center;
   padding: 5px;
@@ -130,10 +78,10 @@ body {
 }
 
 .caja2content {
-  width: 28vw;
+  width: 240px;
   margin-right: 3%;
   font-size: 8px;
-  border: outset 3px white;
+  border: ridge 1px rgba(255, 255, 255, 0.452);
   border-radius: 20px;
   text-align: center;
   padding: 5px;
@@ -143,7 +91,7 @@ body {
 /* art1 */
 .art1 {
   display: flex;
-  height: 600px;
+  height: 500px;
   margin-bottom: 5%;
 }
 .art1cont1 {
@@ -153,7 +101,7 @@ body {
   justify-content: center;
 }
 .art1img1cont {
-  width: 40%;
+  width: 37%;
   transform: rotate(-20deg);
   position: absolute;
   top: 50px;
@@ -162,9 +110,8 @@ body {
   width: 40%;
   transform: rotate(-20deg);
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
 }
-
 .art1cont3 {
   position: relative;
   width: 28vw;
@@ -172,20 +119,23 @@ body {
   justify-content: center;
 }
 .art1img3cont {
-  width: 40%;
+  width: 37%;
   transform: rotate(20deg);
   position: absolute;
   top: 50px;
 }
-
 .show {
   border: solid 1px rgb(14, 10, 10);
   border-radius: 10px;
   font-style: none;
   background-color: var(--color-highlight);
   text-decoration: none;
-  font-size: 13px;
-  padding: 3px;
+  font-size: 15px;
+  padding: 5px;
+ 
+}
+.show:hover{
+  background-color: #a4ff7a;transform: scale(1.5);
 }
 /* ART2 */
 .art2 {
@@ -194,23 +144,26 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 30px;
 }
 .art2 h1 {
   text-align: center;
   color: var(--color-highlight);
 }
 .logos {
+  width: 80vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 8px;
 }
-
 .cajalogosmall {
   width: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 .cajaexperience {
   width: 300px;
@@ -219,27 +172,25 @@ body {
 }
 .experience {
   text-align: center;
-  width: 300px;
-  height: 300px;
+  width: 285px;
+  height: 285px;
   background-color: var(--color-deep-blue);
   border-radius: 30px;
   box-shadow: 0px 1px var(--color-soft-gray);
 }
-
 .logosmall {
-  height: 150px;
-  width: 150px;
+  height: 140px;
+  width: 140px;
   background-color: var(--color-deep-blue);
   padding: 10px;
-  margin: 1vw;
+
   border-radius: 30px;
   box-shadow: 0px 1px var(--color-soft-gray);
-  animation: 1.5s infinite anim-logosmall;
+  /* animation: 2s infinite anim-logosmall; */
 }
-@keyframes anim-logosmall{0%{transform: scale(1);}
-100%{transform: scale(0.95);}}
-
-
+.logosmall:hover {
+  transform: scale(1.1);
+}
 .experience h1 {
   font-size: 100px;
 }
@@ -247,7 +198,6 @@ body {
   text-align: center;
   margin: 20px;
 }
-
 .cv {
   border: solid 1px white;
   border-radius: 10px;
@@ -257,6 +207,8 @@ body {
   padding: 3px;
   margin: 10px;
 }
+.cv:hover{
+  background-color: #a4ff7a}
 /* ADDITIONAL SKILLS */
 .adicional {
   background-color: var(--color-deep-blue);
@@ -346,8 +298,12 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
 /* FORMULARIO */
+.containerform{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
 #productForm {
   font-family: sans-serif;
   border: outset 5px rgb(154, 183, 112);
@@ -355,8 +311,8 @@ body {
   width: 300px;
   background-color: rgb(221, 234, 223);
   padding: 30px;
-  margin: auto;
   text-align: center;
+ 
 }
 #description {
   width: 100%;
@@ -382,10 +338,10 @@ body {
   cursor: pointer;
 }
 button:hover {
-  background-color: rgba(127, 51, 163, 0.599);
+  background-color: rgba(65, 152, 251, 0.558);
 }
-
-@media (max-width: 480px) {
+/* celular */
+@media (max-width: 600px) {
   header {
     display: flex;
     align-items: center;
@@ -398,41 +354,46 @@ button:hover {
   }
 
   .opciones {
+    display: none;
     position: absolute;
-    top: 62px;
+    top: 54px;
     right: 0px;
     background-color: var(--color-deep-blue);
-    width: 80%;
-    height: 80%;
-    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
     z-index: 1;
   }
-  .hidden {
-    display: none;
+  .opciones ul li a:hover{color: #7abaff;}
+  .opciones ul {
+    padding: 30px;
   }
 
   .opciones ul li {
-    font-size: 90%;
-    margin-block: 10px;
+    margin-block: 20px;
     list-style: none;
+    margin-bottom: 30px;
   }
+
   .opciones li a {
     text-decoration: none;
     color: white;
-    transition: transform 0.2s ease;
   }
   a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   .menu {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    width: 50px;
+    width: 40px;
     color: white;
-    border-radius: 10px;
+    border-radius: 6px;
+    margin-right: 10px;
   }
-
+  .hidden {
+    display: flex;
+  }
   .art1cont2 {
     width: 46vw;
     text-align: center;
@@ -440,7 +401,53 @@ button:hover {
     font-size: 10px;
   }
 }
+/* tablet */
+@media (min-width: 580px) {
+  header {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-between;
+  }
 
+  .logoflorverde {
+    width: 5%;
+  }
+
+  .opciones {
+    width: 95%;
+    top: 62px;
+    right: 0px;
+    padding: 3px;
+  }
+  .opciones ul {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+  .opciones ul li {
+    margin-block: 20px;
+    list-style: none;
+  }
+  .opciones li a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    transform: scale(1.2);
+  }
+  .menu {
+    display: none;
+  }
+
+  .art1cont2 {
+    width: 46vw;
+    text-align: center;
+    color: var(--color-soft-gray);
+    font-size: 14px;
+  }
+}
+/* laptop */
 @media (min-width: 1200px) {
   .art1cont2 {
     width: 46vw;
@@ -448,12 +455,25 @@ button:hover {
     color: var(--color-soft-gray);
     font-size: 20px;
   }
-}
-@media (min-width: 2200px) {
-  .art1cont2 {
-    width: 46vw;
-    text-align: center;
-    color: var(--color-soft-gray);
-    font-size:28px;
+
+  .logos {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .cajalogosmall {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+  }
+  .cajaexperience {
+    width: 40%;
+    display: flex;
+    justify-content: center;
   }
 }

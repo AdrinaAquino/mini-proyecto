@@ -1,12 +1,11 @@
 
-const imagenlogos=document.querySelector("#imagenlogo")
+const imagenlogos = document.querySelector("#imagenlogo")
 const menu = document.querySelector('#menu');
-const navBar = document.querySelector('#opciones');
+const opciones = document.querySelector('#opciones');
 
 
-menu.addEventListener("click", function() {
-    console.log("hola");
-    navBar.classList.toggle("hidden")
+menu.addEventListener("click", function () {
+    opciones.classList.toggle("hidden")
 })
 
 
